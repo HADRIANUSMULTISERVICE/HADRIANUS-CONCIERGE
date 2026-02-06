@@ -10,8 +10,8 @@ import hashlib
 # ============================================================================
 
 st.set_page_config(
-    page_title="Hadriano Concierge",
-    page_icon="🏛️",
+    page_title="Luxury Concierge",
+    page_icon="👑",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -22,8 +22,8 @@ st.set_page_config(
 
 translations = {
     "it": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "L'arte dell'ospitalità di lusso",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "L'esperienza dell'ospitalità di lusso",
         "login_title": "Accesso Privilegiato",
         "role_select": "Seleziona il tuo ruolo",
         "admin": "Amministratore",
@@ -74,7 +74,7 @@ translations = {
         "museums": "Musei",
         "shopping": "Shopping",
         "attractions": "Attrazioni",
-        "ask_hadriano": "Chiedi a Hadriano",
+        "ask_hadriano": "Chiedi al Concierge",
         "type_question": "Digita la tua domanda...",
         "send": "Invia",
         "host_available": "L'Host è disponibile",
@@ -104,11 +104,14 @@ translations = {
         "error": "Errore",
         "success": "Successo",
         "save_success": "Salvato con successo",
-        "delete_success": "Eliminato con successo"
+        "delete_success": "Eliminato con successo",
+        "assign_host": "Assegna Host",
+        "select_host": "Seleziona Host",
+        "unassigned": "Non assegnato"
     },
     "en": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "The Art of Luxury Hospitality",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "The Luxury Hospitality Experience",
         "login_title": "Privileged Access",
         "role_select": "Select your role",
         "admin": "Administrator",
@@ -159,7 +162,7 @@ translations = {
         "museums": "Museums",
         "shopping": "Shopping",
         "attractions": "Attractions",
-        "ask_hadriano": "Ask Hadriano",
+        "ask_hadriano": "Ask the Concierge",
         "type_question": "Type your question...",
         "send": "Send",
         "host_available": "Host is available",
@@ -189,11 +192,14 @@ translations = {
         "error": "Error",
         "success": "Success",
         "save_success": "Saved successfully",
-        "delete_success": "Deleted successfully"
+        "delete_success": "Deleted successfully",
+        "assign_host": "Assign Host",
+        "select_host": "Select Host",
+        "unassigned": "Unassigned"
     },
     "es": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "El Arte de la Hospitalidad de Lujo",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "La experiencia de hospitalidad de lujo",
         "login_title": "Acceso Privilegiado",
         "role_select": "Selecciona tu rol",
         "admin": "Administrador",
@@ -244,7 +250,7 @@ translations = {
         "museums": "Museos",
         "shopping": "Compras",
         "attractions": "Atracciones",
-        "ask_hadriano": "Pregunta a Hadriano",
+        "ask_hadriano": "Pregunta al Concierge",
         "type_question": "Escribe tu pregunta...",
         "send": "Enviar",
         "host_available": "El anfitrión está disponible",
@@ -274,11 +280,14 @@ translations = {
         "error": "Error",
         "success": "Éxito",
         "save_success": "Guardado con éxito",
-        "delete_success": "Eliminado con éxito"
+        "delete_success": "Eliminado con éxito",
+        "assign_host": "Asignar Anfitrión",
+        "select_host": "Seleccionar Anfitrión",
+        "unassigned": "No asignado"
     },
     "fr": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "L'Art de l'Hospitalité de Luxe",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "L'expérience de l'hospitalité de luxe",
         "login_title": "Accès Privilégié",
         "role_select": "Sélectionnez votre rôle",
         "admin": "Administrateur",
@@ -329,7 +338,7 @@ translations = {
         "museums": "Musées",
         "shopping": "Shopping",
         "attractions": "Attractions",
-        "ask_hadriano": "Demandez à Hadriano",
+        "ask_hadriano": "Demandez au Concierge",
         "type_question": "Tapez votre question...",
         "send": "Envoyer",
         "host_available": "L'hôte est disponible",
@@ -359,11 +368,14 @@ translations = {
         "error": "Erreur",
         "success": "Succès",
         "save_success": "Enregistré avec succès",
-        "delete_success": "Supprimé avec succès"
+        "delete_success": "Supprimé avec succès",
+        "assign_host": "Attribuer un Hôte",
+        "select_host": "Sélectionner un Hôte",
+        "unassigned": "Non attribué"
     },
     "de": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "Die Kunst der Luxus-Gastfreundschaft",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "Das Luxus-Gastfreundschaftserlebnis",
         "login_title": "Privilegierter Zugang",
         "role_select": "Wählen Sie Ihre Rolle",
         "admin": "Administrator",
@@ -414,7 +426,7 @@ translations = {
         "museums": "Museen",
         "shopping": "Einkaufen",
         "attractions": "Sehenswürdigkeiten",
-        "ask_hadriano": "Fragen Sie Hadriano",
+        "ask_hadriano": "Fragen Sie den Concierge",
         "type_question": "Geben Sie Ihre Frage ein...",
         "send": "Senden",
         "host_available": "Gastgeber ist verfügbar",
@@ -444,11 +456,14 @@ translations = {
         "error": "Fehler",
         "success": "Erfolg",
         "save_success": "Erfolgreich gespeichert",
-        "delete_success": "Erfolgreich gelöscht"
+        "delete_success": "Erfolgreich gelöscht",
+        "assign_host": "Gastgeber zuweisen",
+        "select_host": "Gastgeber auswählen",
+        "unassigned": "Nicht zugewiesen"
     },
     "ru": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "Искусство Роскошного Гостеприимства",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "Опыт роскошного гостеприимства",
         "login_title": "Привилегированный доступ",
         "role_select": "Выберите свою роль",
         "admin": "Администратор",
@@ -499,7 +514,7 @@ translations = {
         "museums": "Музеи",
         "shopping": "Шоппинг",
         "attractions": "Достопримечательности",
-        "ask_hadriano": "Спросите Адриана",
+        "ask_hadriano": "Спросите Консьержа",
         "type_question": "Введите ваш вопрос...",
         "send": "Отправить",
         "host_available": "Хост доступен",
@@ -529,11 +544,14 @@ translations = {
         "error": "Ошибка",
         "success": "Успех",
         "save_success": "Успешно сохранено",
-        "delete_success": "Успешно удалено"
+        "delete_success": "Успешно удалено",
+        "assign_host": "Назначить хоста",
+        "select_host": "Выбрать хоста",
+        "unassigned": "Не назначено"
     },
     "zh": {
-        "app_title": "Hadriano Concierge",
-        "app_subtitle": "奢华款待的艺术",
+        "app_title": "Luxury Concierge",
+        "app_subtitle": "奢华款待体验",
         "login_title": "特权访问",
         "role_select": "选择您的角色",
         "admin": "管理员",
@@ -584,7 +602,7 @@ translations = {
         "museums": "博物馆",
         "shopping": "购物",
         "attractions": "景点",
-        "ask_hadriano": "询问Hadriano",
+        "ask_hadriano": "询问礼宾",
         "type_question": "输入您的问题...",
         "send": "发送",
         "host_available": "房东可用",
@@ -614,7 +632,10 @@ translations = {
         "error": "错误",
         "success": "成功",
         "save_success": "保存成功",
-        "delete_success": "删除成功"
+        "delete_success": "删除成功",
+        "assign_host": "分配房东",
+        "select_host": "选择房东",
+        "unassigned": "未分配"
     }
 }
 
@@ -644,8 +665,8 @@ def initialize_session_state():
     if 'hosts' not in st.session_state:
         # Host predefiniti per testing
         st.session_state.hosts = [
-            {"username": "host1", "password": "host123", "name": "Marco Rossi", "email": "marco@hadriano.com", "available": True},
-            {"username": "host2", "password": "host456", "name": "Anna Bianchi", "email": "anna@hadriano.com", "available": False}
+            {"username": "host1", "password": "host123", "name": "Marco Rossi", "email": "marco@luxury.com", "available": True},
+            {"username": "host2", "password": "host456", "name": "Anna Bianchi", "email": "anna@luxury.com", "available": False}
         ]
     
     if 'admin_users' not in st.session_state:
@@ -679,49 +700,49 @@ def get_gemini_response(prompt, language):
     
     responses_by_language = {
         'it': [
-            "Certamente! La casa dispone di WiFi ad alta velocità. La password è 'HadrianoLuxury2024'. Per qualsiasi problema tecnico, non esiti a contattarci.",
+            "Certamente! La casa dispone di WiFi ad alta velocità. La password è 'LuxuryConcierge2024'. Per qualsiasi problema tecnico, non esiti a contattarci.",
             "Il ristorante più vicino consigliato è 'La Pergola', a soli 10 minuti a piedi. Offre una vista mozzafiato sulla città e una cucina stellata.",
             "Il check-out è previsto per le 11:00. Le chiediamo gentilmente di lasciare le chiavi nell'apposita cassetta di sicurezza.",
             "Nelle vicinanze troverà la Galleria Borghese, uno dei musei più belli di Roma. Consiglio vivamente la prenotazione online per evitare code.",
             "Per la temperatura dell'acqua della doccia, giri la manopola sinistra in senso orario per aumentare il calore. Se dovesse avere problemi, sono a disposizione."
         ],
         'en': [
-            "Certainly! The house has high-speed WiFi. The password is 'HadrianoLuxury2024'. For any technical issues, please do not hesitate to contact us.",
+            "Certainly! The house has high-speed WiFi. The password is 'LuxuryConcierge2024'. For any technical issues, please do not hesitate to contact us.",
             "The nearest recommended restaurant is 'La Pergola', just a 10-minute walk away. It offers a breathtaking view of the city and starred cuisine.",
             "Check-out is scheduled for 11:00 AM. We kindly ask you to leave the keys in the designated safety box.",
             "Nearby you will find the Borghese Gallery, one of the most beautiful museums in Rome. I highly recommend online booking to avoid queues.",
             "For the shower water temperature, turn the left knob clockwise to increase heat. If you have any problems, I am available."
         ],
         'es': [
-            "¡Por supuesto! La casa tiene WiFi de alta velocidad. La contraseña es 'HadrianoLuxury2024'. Para cualquier problema técnico, no dude en contactarnos.",
+            "¡Por supuesto! La casa tiene WiFi de alta velocidad. La contraseña es 'LuxuryConcierge2024'. Para cualquier problema técnico, no dude en contactarnos.",
             "El restaurante recomendado más cercano es 'La Pergola', a solo 10 minutos a pie. Ofrece una vista impresionante de la ciudad y una cocina estrellada.",
             "El check-out está programado para las 11:00. Le rogamos que deje las llaves en la caja de seguridad designada.",
             "Cerca encontrará la Galería Borghese, uno de los museos más bellos de Roma. Recomiendo encarecidamente la reserva en línea para evitar colas.",
             "Para la temperatura del agua de la ducha, gire la perilla izquierda en el sentido de las agujas del reloj para aumentar el calor. Si tiene algún problema, estoy disponible."
         ],
         'fr': [
-            "Certainement! La maison dispose d'un WiFi haute vitesse. Le mot de passe est 'HadrianoLuxury2024'. Pour tout problème technique, n'hésitez pas à nous contacter.",
+            "Certainement! La maison dispose d'un WiFi haute vitesse. Le mot de passe est 'LuxuryConcierge2024'. Pour tout problème technique, n'hésitez pas à nous contacter.",
             "Le restaurant recommandé le plus proche est 'La Pergola', à seulement 10 minutes à pied. Il offre une vue imprenable sur la ville et une cuisine étoilée.",
             "Le check-out est prévu pour 11h00. Nous vous demandons gentiment de laisser les clés dans la boîte de sécurité désignée.",
             "À proximité, vous trouverez la Galerie Borghese, l'un des plus beaux musées de Rome. Je recommande vivement la réservation en ligne pour éviter les files d'attente.",
             "Pour la température de l'eau de la douche, tournez le bouton gauche dans le sens des aiguilles d'une montre pour augmenter la chaleur. Si vous avez des problèmes, je suis disponible."
         ],
         'de': [
-            "Sicherlich! Das Haus verfügt über High-Speed-WLAN. Das Passwort lautet 'HadrianoLuxury2024'. Bei technischen Problemen zögern Sie bitte nicht, uns zu kontaktieren.",
+            "Sicherlich! Das Haus verfügt über High-Speed-WLAN. Das Passwort lautet 'LuxuryConcierge2024'. Bei technischen Problemen zögern Sie bitte nicht, uns zu kontaktieren.",
             "Das nächstgelegene empfohlene Restaurant ist 'La Pergola', nur 10 Gehminuten entfernt. Es bietet einen atemberaubenden Blick auf die Stadt und Sterneküche.",
             "Der Check-out ist für 11:00 Uhr geplant. Wir bitten Sie freundlich, die Schlüssel in der dafür vorgesehenen Sicherheitsbox zu hinterlassen.",
             "In der Nähe finden Sie die Galleria Borghese, eines der schönsten Museen Roms. Ich empfehle dringend die Online-Buchung, um Warteschlangen zu vermeiden.",
             "Für die Duschtemperatur drehen Sie den linken Knopf im Uhrzeigersinn, um die Wärme zu erhöhen. Bei Problemen stehe ich zur Verfügung."
         ],
         'ru': [
-            "Конечно! В доме есть высокоскоростной WiFi. Пароль 'HadrianoLuxury2024'. По любым техническим вопросам, пожалуйста, не стесняйтесь обращаться к нам.",
+            "Конечно! В доме есть высокоскоростной WiFi. Пароль 'LuxuryConcierge2024'. По любым техническим вопросам, пожалуйста, не стесняйтесь обращаться к нам.",
             "Ближайший рекомендуемый ресторан - 'La Pergola', всего в 10 минутах ходьбы. Он предлагает захватывающий вид на город и звездную кухню.",
             "Выезд запланирован на 11:00. Мы любезно просим вас оставить ключи в специальном сейфе.",
             "Поблизости вы найдете Галерею Боргезе, один из самых красивых музеев Рима. Настоятельно рекомендую онлайн-бронирование, чтобы избежать очередей.",
             "Для регулировки температуры воды в душе поверните левую ручку по часовой стрелке, чтобы увеличить тепло. Если у вас возникнут проблемы, я к вашим услугам."
         ],
         'zh': [
-            "当然！房子有高速WiFi。密码是'HadrianoLuxury2024'。如有任何技术问题，请随时与我们联系。",
+            "当然！房子有高速WiFi。密码是'LuxuryConcierge2024'。如有任何技术问题，请随时与我们联系。",
             "最近推荐的餐厅是'La Pergola'，步行仅需10分钟。它提供令人惊叹的城市景观和星级美食。",
             "退房时间为上午11:00。我们恳请您将钥匙放在指定的保险箱中。",
             "附近您会发现博尔盖塞美术馆，罗马最美丽的博物馆之一。我强烈建议在线预订以避免排队。",
@@ -730,7 +751,6 @@ def get_gemini_response(prompt, language):
     }
     
     # Seleziona una risposta casuale nella lingua corretta
-    import random
     if language in responses_by_language:
         return random.choice(responses_by_language[language])
     else:
@@ -742,7 +762,7 @@ def generate_booking_code():
     return str(uuid.uuid4())[:8].upper()
 
 # ============================================================================
-# STILI CSS PERSONALIZZATI
+# STILI CSS PERSONALIZZATI AGGIORNATI
 # ============================================================================
 
 def inject_custom_css():
@@ -756,28 +776,52 @@ def inject_custom_css():
     
     /* Header elegante */
     .luxury-header {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        background: linear-gradient(135deg, #0c0c14 0%, #1a1a2e 100%);
         color: white;
         padding: 2rem;
         border-radius: 0 0 20px 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .luxury-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
     }
     
     /* Card di lusso */
     .luxury-card {
         background-color: white;
         border-radius: 15px;
-        padding: 1.5rem;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        border: 1px solid #f0f0f0;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 2rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        border: 1px solid #e8e8e8;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         margin-bottom: 1.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .luxury-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #8B7355 0%, #A68A6F 100%);
     }
     
     .luxury-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
     }
     
     /* Bottoni eleganti */
@@ -785,96 +829,236 @@ def inject_custom_css():
         background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%);
         color: white;
         border: none;
-        border-radius: 8px;
-        padding: 0.75rem 1.5rem;
+        border-radius: 10px;
+        padding: 0.85rem 1.75rem;
         font-weight: 500;
+        font-size: 0.95rem;
         transition: all 0.3s ease;
+        letter-spacing: 0.5px;
     }
     
     .stButton > button:hover {
         background: linear-gradient(135deg, #A68A6F 0%, #8B7355 100%);
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(139, 115, 85, 0.3);
+        box-shadow: 0 8px 20px rgba(139, 115, 85, 0.3);
     }
     
     /* Badge di stato */
     .status-badge {
         display: inline-block;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
+        padding: 0.6rem 1.2rem;
+        border-radius: 25px;
         font-weight: 600;
         font-size: 0.9rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
     .status-available {
-        background-color: #e8f5e9;
-        color: #2e7d32;
+        background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+        color: white;
     }
     
     .status-busy {
-        background-color: #ffebee;
-        color: #c62828;
+        background: linear-gradient(135deg, #F44336 0%, #EF5350 100%);
+        color: white;
     }
     
     /* Input eleganti */
     .stTextInput > div > div > input {
-        border-radius: 8px;
+        border-radius: 10px;
         border: 1px solid #e0e0e0;
-        padding: 0.75rem;
+        padding: 0.85rem;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+    
+    .stTextInput > div > div > input:focus {
+        border-color: #8B7355;
+        box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.1);
     }
     
     .stSelectbox > div > div {
-        border-radius: 8px;
+        border-radius: 10px;
     }
     
     /* Tabs eleganti */
     .stTabs [data-baseweb="tab-list"] {
-        gap: 2rem;
+        gap: 0;
         background-color: transparent;
+        border-bottom: 2px solid #f0f0f0;
     }
     
     .stTabs [data-baseweb="tab"] {
-        border-radius: 8px 8px 0 0;
-        padding: 0.75rem 1.5rem;
+        border-radius: 10px 10px 0 0;
+        padding: 1rem 2rem;
         font-weight: 500;
+        color: #666;
+        transition: all 0.3s ease;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        color: #8B7355;
+        border-bottom: 3px solid #8B7355;
+        background-color: rgba(139, 115, 85, 0.05);
     }
     
     /* Immagine di copertina */
     .cover-image {
         width: 100%;
-        height: 400px;
+        height: 450px;
         object-fit: cover;
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        transition: transform 0.5s ease;
+    }
+    
+    .cover-image:hover {
+        transform: scale(1.01);
     }
     
     /* Chat AI */
     .chat-message {
-        padding: 1rem;
-        border-radius: 15px;
-        margin-bottom: 1rem;
+        padding: 1.2rem;
+        border-radius: 18px;
+        margin-bottom: 1.2rem;
         max-width: 80%;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        line-height: 1.5;
     }
     
     .user-message {
-        background-color: #e8f5e9;
+        background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
         margin-left: auto;
         border-bottom-right-radius: 5px;
+        border-left: 4px solid #4CAF50;
     }
     
     .ai-message {
-        background-color: #f5f5f5;
+        background: linear-gradient(135deg, #F5F5F5 0%, #FAFAFA 100%);
         margin-right: auto;
         border-bottom-left-radius: 5px;
+        border-left: 4px solid #8B7355;
     }
     
-    /* Selettore lingua */
+    /* Selettore lingua con bandierine */
     .language-selector {
-        background-color: white;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+    
+    .language-flag {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid white;
+    }
+    
+    .language-flag:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .language-dropdown {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        padding: 0.5rem;
+        min-width: 180px;
+        display: none;
+    }
+    
+    .language-option {
+        display: flex;
+        align-items: center;
+        padding: 0.8rem 1rem;
         border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        margin: 0.2rem 0;
+    }
+    
+    .language-option:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .language-option.active {
+        background-color: rgba(139, 115, 85, 0.1);
+        color: #8B7355;
+        font-weight: 500;
+    }
+    
+    /* Welcome grande */
+    .welcome-title {
+        font-size: 4.5rem;
+        font-weight: 300;
+        color: #1a1a2e;
+        text-align: center;
+        margin: 2rem 0;
+        letter-spacing: 2px;
+        position: relative;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.5rem;
+        color: #8B7355;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    /* Icone di lusso */
+    .luxury-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        display: block;
+        text-align: center;
+    }
+    
+    /* Info card eleganti */
+    .info-card {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
         margin-bottom: 1.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid #8B7355;
+    }
+    
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 2rem;
+        color: #888888;
+        font-size: 0.9rem;
+        border-top: 1px solid #f0f0f0;
+        margin-top: 3rem;
+        background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+    }
+    
+    /* Animazioni */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+        animation: fadeIn 0.6s ease-out;
     }
     
     /* Font personalizzati */
@@ -886,6 +1070,7 @@ def inject_custom_css():
     p, .standard-font {
         font-family: 'Inter', sans-serif;
         color: #555555;
+        line-height: 1.6;
     }
     
     /* Effetti speciali */
@@ -894,38 +1079,48 @@ def inject_custom_css():
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        font-weight: 600;
     }
     
-    /* Footer */
-    .footer {
-        text-align: center;
-        padding: 2rem;
-        color: #888888;
-        font-size: 0.9rem;
-        border-top: 1px solid #f0f0f0;
-        margin-top: 3rem;
+    /* Scrollbar personalizzata */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%);
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, #A68A6F 0%, #8B7355 100%);
     }
     </style>
     """, unsafe_allow_html=True)
 
 # ============================================================================
-# COMPONENTI UI
+# COMPONENTI UI AGGIORNATI
 # ============================================================================
 
 def render_luxury_header(title, subtitle=None):
     """Render un header di lusso"""
     st.markdown(f"""
-    <div class="luxury-header">
-        <h1 style="margin: 0; font-size: 2.5rem;">{title}</h1>
-        {f'<p style="margin: 0.5rem 0 0 0; font-size: 1.2rem; opacity: 0.9;">{subtitle}</p>' if subtitle else ''}
+    <div class="luxury-header fade-in">
+        <h1 style="margin: 0; font-size: 2.8rem; letter-spacing: 1px;">{title}</h1>
+        {f'<p style="margin: 0.5rem 0 0 0; font-size: 1.3rem; opacity: 0.9; font-weight: 300;">{subtitle}</p>' if subtitle else ''}
     </div>
     """, unsafe_allow_html=True)
 
 def render_luxury_card(content, title=None):
     """Render una card di lusso"""
-    card_html = '<div class="luxury-card">'
+    card_html = '<div class="luxury-card fade-in">'
     if title:
-        card_html += f'<h3 style="margin-top: 0; color: #1a1a2e;">{title}</h3>'
+        card_html += f'<h3 style="margin-top: 0; color: #1a1a2e; font-size: 1.4rem; margin-bottom: 1.5rem;">{title}</h3>'
     card_html += f'{content}</div>'
     st.markdown(card_html, unsafe_allow_html=True)
 
@@ -936,8 +1131,81 @@ def render_status_badge(available):
     else:
         st.markdown('<div class="status-badge status-busy">● ' + get_text("busy") + '</div>', unsafe_allow_html=True)
 
+def render_language_selector():
+    """Render il selettore lingua con bandierina"""
+    flag_emojis = {
+        "it": "🇮🇹",
+        "en": "🇺🇸",
+        "es": "🇪🇸",
+        "fr": "🇫🇷",
+        "de": "🇩🇪",
+        "ru": "🇷🇺",
+        "zh": "🇨🇳"
+    }
+    
+    language_names = {
+        "it": "Italiano",
+        "en": "English",
+        "es": "Español",
+        "fr": "Français",
+        "de": "Deutsch",
+        "ru": "Русский",
+        "zh": "中文"
+    }
+    
+    current_lang = st.session_state.current_language
+    current_flag = flag_emojis.get(current_lang, "🌐")
+    
+    # Inietta HTML per il selettore lingua
+    st.markdown(f"""
+    <div class="language-selector">
+        <div class="language-flag" id="language-flag">
+            {current_flag}
+        </div>
+        <div class="language-dropdown" id="language-dropdown">
+            {"".join([f'''
+            <div class="language-option {'active' if lang == current_lang else ''}" data-lang="{lang}">
+                <span style="font-size: 1.2rem; margin-right: 10px;">{flag}</span>
+                <span>{name}</span>
+            </div>
+            ''' for lang, flag in flag_emojis.items() for name in [language_names[lang]]])}
+        </div>
+    </div>
+    
+    <script>
+        const flagElement = document.getElementById('language-flag');
+        const dropdown = document.getElementById('language-dropdown');
+        
+        flagElement.addEventListener('click', function() {{
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }});
+        
+        document.querySelectorAll('.language-option').forEach(option => {{
+            option.addEventListener('click', function() {{
+                const lang = this.getAttribute('data-lang');
+                // Invia il linguaggio selezionato a Streamlit
+                const streamlitEvent = new CustomEvent('languageChange', {{ detail: {{ language: lang }} }});
+                window.parent.document.dispatchEvent(streamlitEvent);
+            }});
+        }});
+        
+        // Chiudi dropdown cliccando fuori
+        document.addEventListener('click', function(event) {{
+            if (!flagElement.contains(event.target) && !dropdown.contains(event.target)) {{
+                dropdown.style.display = 'none';
+            }}
+        }});
+    </script>
+    """, unsafe_allow_html=True)
+    
+    # Ascolta eventi JavaScript per cambiare lingua
+    if st.session_state.get('language_changed'):
+        st.session_state.current_language = st.session_state.language_changed
+        del st.session_state.language_changed
+        st.rerun()
+
 # ============================================================================
-# PAGINE DELL'APPLICAZIONE
+# PAGINE DELL'APPLICAZIONE AGGIORNATE
 # ============================================================================
 
 def login_page():
@@ -949,8 +1217,8 @@ def login_page():
     
     with col2:
         render_luxury_card(f"""
-        <h2 style="text-align: center; color: #1a1a2e;">{get_text("login_title")}</h2>
-        <p style="text-align: center; margin-bottom: 2rem;">{get_text("role_select")}</p>
+        <h2 style="text-align: center; color: #1a1a2e; margin-bottom: 0.5rem;">{get_text("login_title")}</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: #666;">{get_text("role_select")}</p>
         """)
         
         # Selezione ruolo
@@ -1025,12 +1293,13 @@ def login_page():
                         # Crea un appartamento demo
                         demo_apartment = {
                             "id": 1,
-                            "name": "Villa Adriana Luxury Suite",
+                            "name": "Villa Luxury Suite",
                             "address": "Via Appia Antica, 123, Roma",
                             "cover_photo": "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-                            "wifi": "Network: Hadriano_Guest | Password: Luxury2024",
+                            "wifi": "Network: Luxury_Guest | Password: Luxury2024",
                             "rules": "Check-in: 15:00 | Check-out: 11:00\nNo party\nNo smoking\nPets allowed with prior authorization",
-                            "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                            "video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                            "host_username": "host1"
                         }
                         st.session_state.apartments.append(demo_apartment)
                     
@@ -1049,7 +1318,7 @@ def admin_dashboard():
     # Logout button in alto a destra
     col1, col2, col3 = st.columns([3, 1, 1])
     with col3:
-        if st.button(get_text("logout")):
+        if st.button(get_text("logout"), use_container_width=True):
             st.session_state.logged_in = False
             st.session_state.user_role = None
             st.session_state.username = None
@@ -1073,23 +1342,33 @@ def admin_dashboard():
             with col1:
                 name = st.text_input(get_text("apartment_name"))
                 address = st.text_area(get_text("address"))
-                cover_photo = st.text_input(get_text("cover_photo"))
+                cover_photo = st.text_input(get_text("cover_photo"), 
+                                           value="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80")
             
             with col2:
-                wifi = st.text_area(get_text("wifi"))
-                rules = st.text_area(get_text("rules"), height=150)
-                video = st.text_input(get_text("video"))
+                wifi = st.text_area(get_text("wifi"), value="Network: Luxury_Guest | Password: Luxury2024")
+                rules = st.text_area(get_text("rules"), height=150, 
+                                    value="Check-in: 15:00 | Check-out: 11:00\nNo party\nNo smoking\nPets allowed with prior authorization")
+                video = st.text_input(get_text("video"), value="https://www.youtube.com/watch?v=dQw4w9WgXcQ")
             
-            if st.form_submit_button(get_text("save")):
+            # Assegnazione host
+            st.markdown("---")
+            st.subheader(get_text("assign_host"))
+            
+            host_options = [get_text("unassigned")] + [host["username"] for host in st.session_state.hosts]
+            selected_host = st.selectbox(get_text("select_host"), host_options)
+            
+            if st.form_submit_button(get_text("save"), use_container_width=True):
                 if name and address:
                     new_apartment = {
                         "id": len(st.session_state.apartments) + 1,
                         "name": name,
                         "address": address,
-                        "cover_photo": cover_photo if cover_photo else "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                        "cover_photo": cover_photo,
                         "wifi": wifi,
                         "rules": rules,
-                        "video": video
+                        "video": video,
+                        "host_username": selected_host if selected_host != get_text("unassigned") else None
                     }
                     st.session_state.apartments.append(new_apartment)
                     st.success(get_text("save_success"))
@@ -1102,17 +1381,27 @@ def admin_dashboard():
             st.info(get_text("no_apartments"))
         else:
             for i, apt in enumerate(st.session_state.apartments):
-                with st.expander(f"{apt['name']} - {apt['address']}"):
-                    col1, col2 = st.columns([3, 1])
+                with st.expander(f"🏠 {apt['name']} - {apt['address']}"):
+                    col1, col2, col3 = st.columns([3, 1, 1])
                     with col1:
                         st.write(f"**{get_text('wifi')}:** {apt['wifi']}")
                         st.write(f"**{get_text('rules')}:**")
                         st.write(apt['rules'])
                         if apt['video']:
                             st.write(f"**{get_text('video_guide')}:** {apt['video']}")
+                        
+                        # Mostra host assegnato
+                        if apt.get('host_username'):
+                            assigned_host = next((h for h in st.session_state.hosts if h['username'] == apt['host_username']), None)
+                            if assigned_host:
+                                st.write(f"**{get_text('assign_host')}:** {assigned_host['name']} ({assigned_host['username']})")
                     
                     with col2:
-                        if st.button(get_text("delete"), key=f"delete_apt_{i}"):
+                        if apt.get('cover_photo'):
+                            st.image(apt['cover_photo'], width=200)
+                    
+                    with col3:
+                        if st.button(get_text("delete"), key=f"delete_apt_{i}", use_container_width=True):
                             st.session_state.apartments.pop(i)
                             st.rerun()
     
@@ -1131,7 +1420,7 @@ def admin_dashboard():
                 host_username = st.text_input(get_text("username"))
                 host_password = st.text_input(get_text("password"), type="password")
             
-            if st.form_submit_button(get_text("save")):
+            if st.form_submit_button(get_text("save"), use_container_width=True):
                 if host_name and host_username and host_password:
                     new_host = {
                         "username": host_username,
@@ -1151,14 +1440,22 @@ def admin_dashboard():
             st.info(get_text("no_hosts"))
         else:
             for i, host in enumerate(st.session_state.hosts):
-                with st.expander(f"{host['name']} ({host['email']})"):
+                with st.expander(f"👤 {host['name']} ({host['email']})"):
                     col1, col2 = st.columns([3, 1])
                     with col1:
                         st.write(f"**{get_text('username')}:** {host['username']}")
                         render_status_badge(host['available'])
+                        
+                        # Mostra appartamenti assegnati
+                        assigned_apartments = [apt for apt in st.session_state.apartments 
+                                              if apt.get('host_username') == host['username']]
+                        if assigned_apartments:
+                            st.write(f"**Appartamenti assegnati:**")
+                            for apt in assigned_apartments:
+                                st.write(f"- {apt['name']}")
                     
                     with col2:
-                        if st.button(get_text("delete"), key=f"delete_host_{i}"):
+                        if st.button(get_text("delete"), key=f"delete_host_{i}", use_container_width=True):
                             st.session_state.hosts.pop(i)
                             st.rerun()
     
@@ -1190,7 +1487,7 @@ def admin_dashboard():
                     poi_description = st.text_area(get_text("poi_description"), height=150)
                     poi_map = st.text_input(get_text("poi_map"))
                 
-                if st.form_submit_button(get_text("save")):
+                if st.form_submit_button(get_text("save"), use_container_width=True):
                     if poi_name and poi_description:
                         new_poi = {
                             "id": len(st.session_state.points_of_interest) + 1,
@@ -1214,7 +1511,7 @@ def admin_dashboard():
                 st.info(get_text("no_poi"))
             else:
                 for i, poi in enumerate(apt_pois):
-                    with st.expander(f"{poi['name']} ({poi['type']})"):
+                    with st.expander(f"📍 {poi['name']} ({poi['type']})"):
                         col1, col2 = st.columns([3, 1])
                         with col1:
                             st.write(f"**{get_text('address')}:** {poi['address']}")
@@ -1223,7 +1520,7 @@ def admin_dashboard():
                                 st.write(f"**{get_text('poi_map')}:** {poi['map_url']}")
                         
                         with col2:
-                            if st.button(get_text("delete"), key=f"delete_poi_{i}"):
+                            if st.button(get_text("delete"), key=f"delete_poi_{i}", use_container_width=True):
                                 st.session_state.points_of_interest.remove(poi)
                                 st.rerun()
     
@@ -1238,13 +1535,13 @@ def admin_dashboard():
                 st.write(f"**Codice:** `{code}` → **Appartamento:** {apartment['name']}")
 
 def host_dashboard():
-    """Dashboard Host"""
+    """Dashboard Host - SEMPLIFICATA senza impostazioni"""
     render_luxury_header(f"{get_text('welcome')}, {st.session_state.username}", get_text('app_subtitle'))
     
-    # Logout button in alto a destra
-    col1, col2, col3 = st.columns([3, 1, 1])
-    with col3:
-        if st.button(get_text("logout")):
+    # Solo logout in alto a destra, nessun altro menu
+    col1, col2 = st.columns([4, 1])
+    with col2:
+        if st.button(get_text("logout"), use_container_width=True):
             st.session_state.logged_in = False
             st.session_state.user_role = None
             st.session_state.username = None
@@ -1261,39 +1558,57 @@ def host_dashboard():
         st.error("Host non trovato")
         return
     
-    # Layout a due colonne
+    # Mostra solo gli appartamenti assegnati a questo host
+    host_apartments = [apt for apt in st.session_state.apartments 
+                      if apt.get('host_username') == st.session_state.username]
+    
+    if not host_apartments:
+        render_luxury_card(f"""
+        <div style="text-align: center; padding: 2rem;">
+            <div class="luxury-icon">🏠</div>
+            <h3>Nessun Appartamento Assegnato</h3>
+            <p>Attendi che l'amministratore ti assegni degli appartamenti.</p>
+        </div>
+        """)
+        return
+    
+    # Layout principale per host
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        # Selettore appartamenti (se l'host gestisce più appartamenti)
-        if st.session_state.apartments:
-            apt_options = [apt["name"] for apt in st.session_state.apartments]
-            selected_apt_name = st.selectbox("Seleziona Appartamento", apt_options)
-            selected_apt = next(apt for apt in st.session_state.apartments if apt["name"] == selected_apt_name)
-        else:
-            st.info(get_text("no_apartments"))
-            selected_apt = None
+        # Selettore appartamenti
+        apt_options = [apt["name"] for apt in host_apartments]
+        selected_apt_name = st.selectbox("Seleziona Appartamento", apt_options)
+        selected_apt = next(apt for apt in host_apartments if apt["name"] == selected_apt_name)
         
         # Genera codici ospiti
         st.subheader(get_text("generate_codes"))
         
-        if selected_apt:
-            if st.button("Genera Nuovo Codice", use_container_width=True):
-                new_code = generate_booking_code()
-                st.session_state.guest_codes[new_code] = selected_apt
-                st.success(f"{get_text('code_generated')}: **{new_code}**")
-                st.code(new_code, language="text")
+        if st.button("Genera Nuovo Codice", use_container_width=True):
+            new_code = generate_booking_code()
+            st.session_state.guest_codes[new_code] = selected_apt
+            st.success(f"{get_text('code_generated')}: **{new_code}**")
+            st.markdown(f"""
+            <div style="background: #f5f5f5; padding: 1rem; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <p style="margin: 0; font-family: monospace; font-size: 1.2rem; font-weight: bold;">{new_code}</p>
+            </div>
+            """, unsafe_allow_html=True)
         
-        # Visualizza codici esistenti
+        # Visualizza codici esistenti per questo appartamento
         if st.session_state.guest_codes:
             st.subheader("Codici Generati")
             for code, apt in st.session_state.guest_codes.items():
                 if apt["name"] == selected_apt_name:
-                    st.write(f"`{code}` → {apt['name']}")
+                    st.write(f"`{code}`")
     
     with col2:
-        # Stato disponibilità
-        st.subheader(get_text("availability"))
+        # Stato disponibilità - design elegante
+        render_luxury_card(f"""
+        <div style="text-align: center;">
+            <div class="luxury-icon">📱</div>
+            <h3>{get_text("availability")}</h3>
+        </div>
+        """)
         
         current_status = current_host.get("available", True)
         
@@ -1321,114 +1636,117 @@ def host_dashboard():
         else:
             render_status_badge(False)
             st.write(get_text("status_red"))
-        
-        # Info host
-        st.markdown("---")
-        st.subheader("Le Tue Informazioni")
-        st.write(f"**Nome:** {current_host['name']}")
-        st.write(f"**Email:** {current_host['email']}")
 
 def guest_dashboard():
-    """Dashboard Ospite - Con interfaccia multilingua"""
+    """Dashboard Ospite - Interfaccia completamente rinnovata"""
     
-    # Selettore lingua solo per gli ospiti
-    st.sidebar.markdown('<div class="language-selector">', unsafe_allow_html=True)
-    st.sidebar.subheader(get_text("select_language"))
+    # Selettore lingua con bandierina in alto a sinistra
+    render_language_selector()
     
-    language_options = {
-        "it": get_text("italian"),
-        "en": get_text("english"),
-        "es": get_text("spanish"),
-        "fr": get_text("french"),
-        "de": get_text("german"),
-        "ru": get_text("russian"),
-        "zh": get_text("chinese")
-    }
-    
-    current_lang_code = st.session_state.current_language
-    
-    # Crea pulsanti per ogni lingua
-    cols = st.sidebar.columns(3)
-    lang_buttons = []
-    
-    for idx, (code, name) in enumerate(language_options.items()):
-        col_idx = idx % 3
-        with cols[col_idx]:
-            # Evidenzia la lingua corrente
-            if code == current_lang_code:
-                if st.button(name, use_container_width=True, type="primary"):
-                    st.session_state.current_language = code
-                    st.rerun()
-            else:
-                if st.button(name, use_container_width=True):
-                    st.session_state.current_language = code
-                    st.rerun()
-    
-    st.sidebar.markdown('</div>', unsafe_allow_html=True)
-    
-    # Logout button nella sidebar
-    st.sidebar.markdown("---")
-    if st.sidebar.button(get_text("logout"), use_container_width=True):
-        st.session_state.logged_in = False
-        st.session_state.user_role = None
-        st.session_state.username = None
-        st.session_state.current_apartment = None
-        st.rerun()
-    
-    # Contenuto principale
     apartment = st.session_state.current_apartment
     
     if not apartment:
         st.error("Nessun appartamento selezionato")
         return
     
-    # Header con immagine di copertina
-    render_luxury_header(apartment["name"], get_text("app_subtitle"))
-    
+    # Immagine di copertina in grande
     if apartment.get("cover_photo"):
         st.image(apartment["cover_photo"], use_column_width=True, caption=apartment["name"])
     
-    # Tabs per le diverse sezioni
+    # Welcome gigante e elegante
+    st.markdown(f"""
+    <div class="welcome-title fade-in">
+        WELCOME
+    </div>
+    <div class="welcome-subtitle fade-in">
+        to {apartment["name"]}
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Tabs per le diverse sezioni - design migliorato
     tab1, tab2, tab3, tab4 = st.tabs([
-        get_text("home"),
-        get_text("local_guide"),
-        get_text("ai_concierge"),
-        get_text("assistance")
+        "🏠 " + get_text("home"),
+        "🗺️ " + get_text("local_guide"),
+        "🤖 " + get_text("ai_concierge"),
+        "📞 " + get_text("assistance")
     ])
     
-    # Tab 1: Home - Informazioni casa
+    # Tab 1: Home - Informazioni casa con design migliorato
     with tab1:
         col1, col2 = st.columns([2, 1])
         
         with col1:
+            # Card informazioni casa
             render_luxury_card(f"""
-            <h3>{get_text("house_info")}</h3>
-            <p><strong>{get_text("address")}:</strong> {apartment["address"]}</p>
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; margin-right: 1rem;">🏡</div>
+                <div>
+                    <h4 style="margin: 0; color: #1a1a2e;">{get_text("house_info")}</h4>
+                    <p style="margin: 0.5rem 0 0 0; color: #666;">{apartment["address"]}</p>
+                </div>
+            </div>
             """)
             
-            # WiFi in evidenza
+            # WiFi in evidenza con design elegante
             render_luxury_card(f"""
-            <h3>🔗 {get_text("wifi_details")}</h3>
-            <p style="font-family: monospace; font-size: 1.1rem; background: #f5f5f5; padding: 1rem; border-radius: 8px;">
-            {apartment.get("wifi", "Non disponibile")}
-            </p>
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; margin-right: 1rem;">🌐</div>
+                <div>
+                    <h4 style="margin: 0; color: #1a1a2e;">{get_text("wifi_details")}</h4>
+                </div>
+            </div>
+            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
+                        padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4CAF50;">
+                <p style="margin: 0; font-family: 'Courier New', monospace; font-size: 1.1rem; 
+                        font-weight: 500; color: #333;">
+                {apartment.get("wifi", "WiFi non disponibile")}
+                </p>
+            </div>
             """)
         
         with col2:
-            # Regole della casa
+            # Regole della casa in card elegante
             render_luxury_card(f"""
-            <h3>📋 {get_text("house_rules")}</h3>
-            <p style="white-space: pre-line;">{apartment.get("rules", "Nessuna regola specificata")}</p>
+            <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                <div style="font-size: 2rem; margin-right: 1rem;">📋</div>
+                <div>
+                    <h4 style="margin: 0; color: #1a1a2e;">{get_text("house_rules")}</h4>
+                </div>
+            </div>
+            <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; max-height: 200px; overflow-y: auto;">
+                <p style="white-space: pre-line; margin: 0; color: #555; line-height: 1.6;">
+                {apartment.get("rules", get_text("no_apartments"))}
+                </p>
+            </div>
             """)
             
-            # Video guide
+            # Video guide se disponibile
             if apartment.get("video"):
                 render_luxury_card(f"""
-                <h3>🎥 {get_text("video_guide")}</h3>
-                <p><a href="{apartment['video']}" target="_blank">Guarda il video di benvenuto</a></p>
+                <div style="display: flex; align-items: center; margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; margin-right: 1rem;">🎥</div>
+                    <div>
+                        <h4 style="margin: 0; color: #1a1a2e;">{get_text("video_guide")}</h4>
+                    </div>
+                </div>
+                <p style="text-align: center;">
+                    <a href="{apartment['video']}" target="_blank" style="
+                        display: inline-block;
+                        padding: 0.8rem 1.5rem;
+                        background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%);
+                        color: white;
+                        text-decoration: none;
+                        border-radius: 10px;
+                        font-weight: 500;
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(139, 115, 85, 0.3)';"
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        ▶️ Guarda il Video
+                    </a>
+                </p>
                 """)
     
-    # Tab 2: Guida Local
+    # Tab 2: Guida Local con design migliorato
     with tab2:
         if st.session_state.points_of_interest:
             # Filtra POI per questo appartamento
@@ -1444,51 +1762,101 @@ def guest_dashboard():
                         poi_by_type[poi_type] = []
                     poi_by_type[poi_type].append(poi)
                 
-                # Visualizza per tipo
+                # Visualizza per tipo con design elegante
                 for poi_type, pois in poi_by_type.items():
-                    st.subheader(poi_type)
+                    st.subheader(f"📍 {poi_type}")
                     
                     for poi in pois:
-                        with st.expander(f"📍 {poi['name']}"):
-                            st.write(f"**{get_text('address')}:** {poi.get('address', 'N/A')}")
-                            st.write(f"**{get_text('poi_description')}:** {poi.get('description', 'Nessuna descrizione')}")
-                            
-                            if poi.get("map_url"):
-                                st.write(f"**{get_text('poi_map')}:** [Apri mappa]({poi['map_url']})")
+                        render_luxury_card(f"""
+                        <div style="margin-bottom: 1rem;">
+                            <h4 style="margin: 0 0 0.5rem 0; color: #1a1a2e;">{poi['name']}</h4>
+                            <p style="margin: 0 0 0.5rem 0; color: #666;">
+                                <strong>📍 {get_text('address')}:</strong> {poi.get('address', 'N/A')}
+                            </p>
+                            <p style="margin: 0; color: #555;">{poi.get('description', 'Nessuna descrizione')}</p>
+                        </div>
+                        {f'<p style="margin-top: 0.5rem;"><a href="{poi["map_url"]}" target="_blank" style="color: #8B7355; text-decoration: none; font-weight: 500;">🗺️ {get_text("poi_map")}</a></p>' if poi.get("map_url") else ''}
+                        """, title=None)
             else:
-                st.info(f"Nessun punto di interesse ancora aggiunto per {apartment['name']}")
+                render_luxury_card(f"""
+                <div style="text-align: center; padding: 2rem;">
+                    <div class="luxury-icon">🗺️</div>
+                    <h3>Guida Local in Arrivo</h3>
+                    <p>L'amministratore sta preparando le migliori raccomandazioni per {apartment['name']}.</p>
+                </div>
+                """)
         else:
-            st.info("L'amministratore non ha ancora aggiunto punti di interesse per questa zona.")
+            render_luxury_card(f"""
+            <div style="text-align: center; padding: 2rem;">
+                <div class="luxury-icon">🗺️</div>
+                <h3>Scopri la Zona</h3>
+                <p>Presto troverai qui i migliori ristoranti, musei e attrazioni della zona.</p>
+            </div>
+            """)
     
-    # Tab 3: Concierge AI
+    # Tab 3: Concierge AI con design migliorato
     with tab3:
-        st.subheader("🤖 Hadriano " + get_text("ai_concierge"))
-        st.caption(get_text("ask_hadriano"))
+        render_luxury_card(f"""
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div class="luxury-icon">🤖</div>
+            <h3>Concierge AI</h3>
+            <p style="color: #666;">{get_text("ask_hadriano")}</p>
+        </div>
+        """)
         
-        # Area chat
+        # Area chat migliorata
         chat_container = st.container(height=400)
         
         with chat_container:
-            for message in st.session_state.chat_history[-10:]:  # Mostra ultimi 10 messaggi
-                if message["role"] == "user":
-                    st.markdown(f"""
-                    <div class="chat-message user-message">
-                        <strong>Tu:</strong> {message["content"]}
-                    </div>
-                    """, unsafe_allow_html=True)
-                else:
-                    st.markdown(f"""
-                    <div class="chat-message ai-message">
-                        <strong>Hadriano:</strong> {message["content"]}
-                    </div>
-                    """, unsafe_allow_html=True)
+            if not st.session_state.chat_history:
+                st.markdown(f"""
+                <div style="text-align: center; padding: 3rem 1rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👋</div>
+                    <h4 style="color: #1a1a2e; margin-bottom: 1rem;">Ciao! Sono il tuo Concierge Virtuale</h4>
+                    <p style="color: #666; max-width: 500px; margin: 0 auto;">
+                        Chiedimi qualsiasi cosa sulla casa, sul WiFi, sulle regole 
+                        o sui migliori posti da visitare nella zona. Sono qui per aiutarti!
+                    </p>
+                </div>
+                """, unsafe_allow_html=True)
+            else:
+                for message in st.session_state.chat_history[-10:]:  # Mostra ultimi 10 messaggi
+                    if message["role"] == "user":
+                        st.markdown(f"""
+                        <div class="chat-message user-message fade-in">
+                            <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 50%; 
+                                            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%); 
+                                            display: flex; align-items: center; justify-content: center; 
+                                            margin-right: 10px; color: white; font-weight: bold;">T</div>
+                                <strong>Tu</strong>
+                            </div>
+                            <div style="color: #333;">{message["content"]}</div>
+                        </div>
+                        """, unsafe_allow_html=True)
+                    else:
+                        st.markdown(f"""
+                        <div class="chat-message ai-message fade-in">
+                            <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                <div style="width: 32px; height: 32px; border-radius: 50%; 
+                                            background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%); 
+                                            display: flex; align-items: center; justify-content: center; 
+                                            margin-right: 10px; color: white; font-weight: bold;">C</div>
+                                <strong>Concierge</strong>
+                            </div>
+                            <div style="color: #333;">{message["content"]}</div>
+                        </div>
+                        """, unsafe_allow_html=True)
         
-        # Input per nuova domanda
+        # Input per nuova domanda con design migliorato
         col_input, col_btn = st.columns([4, 1])
         
         with col_input:
-            user_question = st.text_input(get_text("type_question"), label_visibility="collapsed", 
-                                         placeholder=get_text("type_question"))
+            user_question = st.text_input(
+                get_text("type_question"), 
+                label_visibility="collapsed", 
+                placeholder=get_text("type_question")
+            )
         
         with col_btn:
             if st.button(get_text("send"), use_container_width=True) and user_question:
@@ -1509,10 +1877,8 @@ def guest_dashboard():
                 
                 st.rerun()
     
-    # Tab 4: Assistenza
+    # Tab 4: Assistenza con design migliorato
     with tab4:
-        st.subheader(get_text("assistance"))
-        
         # Trova host disponibile
         available_hosts = [host for host in st.session_state.hosts if host.get("available", False)]
         
@@ -1520,32 +1886,78 @@ def guest_dashboard():
             host = available_hosts[0]  # Prendi il primo host disponibile
             
             render_luxury_card(f"""
-            <h3>✅ {get_text("host_available")}</h3>
-            <p><strong>{get_text("host_name")}:</strong> {host.get('name', 'Host')}</p>
-            <p><strong>Email:</strong> {host.get('email', 'N/A')}</p>
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="luxury-icon">✅</div>
+                <h3>{get_text("host_available")}</h3>
+                <p style="color: #666;">Il tuo host è pronto ad assisterti</p>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
+                        padding: 1.5rem; border-radius: 15px; margin-bottom: 2rem;">
+                <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                    <div style="width: 60px; height: 60px; border-radius: 50%; 
+                                background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%); 
+                                display: flex; align-items: center; justify-content: center; 
+                                margin-right: 1rem; color: white; font-size: 1.5rem; font-weight: bold;">
+                        {host['name'][0]}
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; color: #1a1a2e;">{host.get('name', 'Host')}</h4>
+                        <p style="margin: 0.25rem 0 0 0; color: #666;">{host.get('email', 'N/A')}</p>
+                    </div>
+                </div>
+            </div>
             """)
             
-            # Pulsanti di contatto
+            # Pulsanti di contatto con design elegante
             col1, col2 = st.columns(2)
             
             with col1:
-                if st.button("📞 " + get_text("call_host"), use_container_width=True):
-                    st.info(f"Chiamando {host.get('name')}... (simulazione)")
-                    # In un'app reale qui si aprirebbe il dialer del telefono
+                if st.button("📞 " + get_text("call_host"), use_container_width=True, 
+                           type="primary"):
+                    st.success(f"Chiamando {host.get('name')}... (simulazione)")
             
             with col2:
-                if st.button("💬 " + get_text("whatsapp_host"), use_container_width=True):
-                    st.info(f"Apertura WhatsApp per {host.get('name')}... (simulazione)")
-                    # In un'app reale qui si aprirebbe WhatsApp
+                if st.button("💬 " + get_text("whatsapp_host"), use_container_width=True,
+                           type="primary"):
+                    st.success(f"Apertura WhatsApp per {host.get('name')}... (simulazione)")
             
             # Informazioni aggiuntive
             st.markdown("---")
-            st.info("Per assistenza immediata, puoi anche chiamare il nostro supporto 24/7 al numero: +39 06 1234 5678")
+            render_luxury_card(f"""
+            <div style="display: flex; align-items: flex-start;">
+                <div style="font-size: 1.5rem; margin-right: 1rem;">🆘</div>
+                <div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #1a1a2e;">Assistenza 24/7</h4>
+                    <p style="margin: 0; color: #666;">
+                        Per emergenze, chiama il nostro supporto 24/7:<br>
+                        <strong style="font-size: 1.2rem; color: #1a1a2e;">+39 06 1234 5678</strong>
+                    </p>
+                </div>
+            </div>
+            """)
         else:
             render_luxury_card(f"""
-            <h3>⏳ {get_text("assistance")}</h3>
-            <p>Al momento nessun host è disponibile. Il nostro team ti contatterà appena possibile.</p>
-            <p>Per emergenze, chiama il supporto 24/7: <strong>+39 06 1234 5678</strong></p>
+            <div style="text-align: center; padding: 2rem;">
+                <div class="luxury-icon">⏳</div>
+                <h3>{get_text("assistance")}</h3>
+                <p style="color: #666; margin-bottom: 1.5rem;">
+                    Al momento nessun host è disponibile. Il nostro team ti contatterà appena possibile.
+                </p>
+                
+                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); 
+                            padding: 1.5rem; border-radius: 15px; margin: 0 auto; max-width: 400px;">
+                    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <div style="font-size: 2rem; margin-right: 1rem;">🆘</div>
+                        <div>
+                            <h4 style="margin: 0; color: #e65100;">Emergenza 24/7</h4>
+                        </div>
+                    </div>
+                    <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #1a1a2e;">
+                        +39 06 1234 5678
+                    </p>
+                </div>
+            </div>
             """)
 
 # ============================================================================
@@ -1575,8 +1987,8 @@ def main():
     # Footer
     st.markdown("""
     <div class="footer">
-        <p>Hadriano Concierge © 2024 | Luxury Edition Multilingua</p>
-        <p>L'arte dell'ospitalità di lusso</p>
+        <p>Luxury Concierge © 2024 | The Luxury Hospitality Experience</p>
+        <p>L'esperienza dell'ospitalità di lusso</p>
     </div>
     """, unsafe_allow_html=True)
 
