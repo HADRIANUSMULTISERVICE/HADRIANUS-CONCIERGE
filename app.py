@@ -729,7 +729,7 @@ def get_gemini_response(prompt, language):
         ],
         'de': [
             "Sicherlich! Das Haus verfügt über High-Speed-WLAN. Das Passwort lautet 'LuxuryConcierge2024'. Bei technischen Problemen zögern Sie bitte nicht, uns zu kontaktieren.",
-            "Das nächstgelegene empfohlene Restaurant ist 'La Pergola', nur 10 Gehminuten entfernt. Es bietet einen atemberaubenden Blick auf die Stadt und Sterneküche.",
+            "Das nächstgelegene empfohlene Restaurant ist 'La Pergola', nur 10 Gehminuten entfernt. Es bietet einen atemberaubenden Blick auf la città e Sterneküche.",
             "Der Check-out ist für 11:00 Uhr geplant. Wir bitten Sie freundlich, die Schlüssel in der dafür vorgesehenen Sicherheitsbox zu hinterlassen.",
             "In der Nähe finden Sie die Galleria Borghese, eines der schönsten Museen Roms. Ich empfehle dringend die Online-Buchung, um Warteschlangen zu vermeiden.",
             "Für die Duschtemperatur drehen Sie den linken Knopf im Uhrzeigersinn, um die Wärme zu erhöhen. Bei Problemen stehe ich zur Verfügung."
@@ -762,7 +762,7 @@ def generate_booking_code():
     return str(uuid.uuid4())[:8].upper()
 
 # ============================================================================
-# STILI CSS PERSONALIZZATI AGGIORNATI
+# STILI CSS PERSONALIZZATI
 # ============================================================================
 
 def inject_custom_css():
@@ -1040,17 +1040,6 @@ def inject_custom_css():
         border-left: 4px solid #8B7355;
     }
     
-    /* Footer */
-    .footer {
-        text-align: center;
-        padding: 2rem;
-        color: #888888;
-        font-size: 0.9rem;
-        border-top: 1px solid #f0f0f0;
-        margin-top: 3rem;
-        background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
-    }
-    
     /* Animazioni */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
@@ -1104,7 +1093,7 @@ def inject_custom_css():
     """, unsafe_allow_html=True)
 
 # ============================================================================
-# COMPONENTI UI AGGIORNATI
+# COMPONENTI UI
 # ============================================================================
 
 def render_luxury_header(title, subtitle=None):
@@ -1205,7 +1194,7 @@ def render_language_selector():
         st.rerun()
 
 # ============================================================================
-# PAGINE DELL'APPLICAZIONE AGGIORNATE
+# PAGINE DELL'APPLICAZIONE
 # ============================================================================
 
 def login_page():
@@ -1588,11 +1577,6 @@ def host_dashboard():
             new_code = generate_booking_code()
             st.session_state.guest_codes[new_code] = selected_apt
             st.success(f"{get_text('code_generated')}: **{new_code}**")
-            st.markdown(f"""
-            <div style="background: #f5f5f5; padding: 1rem; border-radius: 10px; border-left: 4px solid #4CAF50;">
-                <p style="margin: 0; font-family: monospace; font-size: 1.2rem; font-weight: bold;">{new_code}</p>
-            </div>
-            """, unsafe_allow_html=True)
         
         # Visualizza codici esistenti per questo appartamento
         if st.session_state.guest_codes:
@@ -1877,88 +1861,10 @@ def guest_dashboard():
                 
                 st.rerun()
     
-    # Tab 4: Assistenza con design migliorato
+    # Tab 4: Assistenza - VUOTA come richiesto
     with tab4:
-        # Trova host disponibile
-        available_hosts = [host for host in st.session_state.hosts if host.get("available", False)]
-        
-        if available_hosts:
-            host = available_hosts[0]  # Prendi il primo host disponibile
-            
-            render_luxury_card(f"""
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <div class="luxury-icon">✅</div>
-                <h3>{get_text("host_available")}</h3>
-                <p style="color: #666;">Il tuo host è pronto ad assisterti</p>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
-                        padding: 1.5rem; border-radius: 15px; margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                    <div style="width: 60px; height: 60px; border-radius: 50%; 
-                                background: linear-gradient(135deg, #8B7355 0%, #A68A6F 100%); 
-                                display: flex; align-items: center; justify-content: center; 
-                                margin-right: 1rem; color: white; font-size: 1.5rem; font-weight: bold;">
-                        {host['name'][0]}
-                    </div>
-                    <div>
-                        <h4 style="margin: 0; color: #1a1a2e;">{host.get('name', 'Host')}</h4>
-                        <p style="margin: 0.25rem 0 0 0; color: #666;">{host.get('email', 'N/A')}</p>
-                    </div>
-                </div>
-            </div>
-            """)
-            
-            # Pulsanti di contatto con design elegante
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                if st.button("📞 " + get_text("call_host"), use_container_width=True, 
-                           type="primary"):
-                    st.success(f"Chiamando {host.get('name')}... (simulazione)")
-            
-            with col2:
-                if st.button("💬 " + get_text("whatsapp_host"), use_container_width=True,
-                           type="primary"):
-                    st.success(f"Apertura WhatsApp per {host.get('name')}... (simulazione)")
-            
-            # Informazioni aggiuntive
-            st.markdown("---")
-            render_luxury_card(f"""
-            <div style="display: flex; align-items: flex-start;">
-                <div style="font-size: 1.5rem; margin-right: 1rem;">🆘</div>
-                <div>
-                    <h4 style="margin: 0 0 0.5rem 0; color: #1a1a2e;">Assistenza 24/7</h4>
-                    <p style="margin: 0; color: #666;">
-                        Per emergenze, chiama il nostro supporto 24/7:<br>
-                        <strong style="font-size: 1.2rem; color: #1a1a2e;">+39 06 1234 5678</strong>
-                    </p>
-                </div>
-            </div>
-            """)
-        else:
-            render_luxury_card(f"""
-            <div style="text-align: center; padding: 2rem;">
-                <div class="luxury-icon">⏳</div>
-                <h3>{get_text("assistance")}</h3>
-                <p style="color: #666; margin-bottom: 1.5rem;">
-                    Al momento nessun host è disponibile. Il nostro team ti contatterà appena possibile.
-                </p>
-                
-                <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); 
-                            padding: 1.5rem; border-radius: 15px; margin: 0 auto; max-width: 400px;">
-                    <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                        <div style="font-size: 2rem; margin-right: 1rem;">🆘</div>
-                        <div>
-                            <h4 style="margin: 0; color: #e65100;">Emergenza 24/7</h4>
-                        </div>
-                    </div>
-                    <p style="margin: 0; font-size: 1.2rem; font-weight: bold; color: #1a1a2e;">
-                        +39 06 1234 5678
-                    </p>
-                </div>
-            </div>
-            """)
+        # Lasciamo vuoto come richiesto
+        pass
 
 # ============================================================================
 # APPLICAZIONE PRINCIPALE
@@ -1984,13 +1890,7 @@ def main():
         elif st.session_state.user_role == "guest":
             guest_dashboard()
     
-    # Footer
-    st.markdown("""
-    <div class="footer">
-        <p>Luxury Concierge © 2024 | The Luxury Hospitality Experience</p>
-        <p>L'esperienza dell'ospitalità di lusso</p>
-    </div>
-    """, unsafe_allow_html=True)
+    # NOTA: Footer rimosso come richiesto
 
 # ============================================================================
 # AVVIO APPLICAZIONE
